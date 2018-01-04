@@ -1,8 +1,25 @@
 @charset 'UTF-8';
 
 @import
-'1-base/base';
+'0-plugins/bourbon/bourbon';
 
 @import
+'variables';
+
+@import
+'mixins';
+
+// base
+@import
+'1-base/base';
+
+// layouts
+@import
 '2-layouts/header',
-'2-layouts/grid';
+'2-layouts/footer',
+'2-layouts/grid',
+'2-layouts/container';
+
+// modules
+@import
+'3-modules/box';

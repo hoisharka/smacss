@@ -1,0 +1,10 @@
+.box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    @include box( 100%, #555, orangered, yellow );
+}
+
+.box2 {
+    @include box( 50%, #000, #639, #fc3 );
+}
