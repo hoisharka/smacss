@@ -1,3 +1,37 @@
 body {
+    font-family: $monospace;
     font-size: $base-size;
+    background: $pink;
+}
+
+.brand {
+    @include hide-text;
+    background: center no-repeat;
+    @include retina-image("/images/bourbon-logo", 294px 94px);
+    height: 56px;
+    margin: $gutter auto;
+}
+
+h2{
+    font-size: $base-size * 1.8;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    @extend h2;
+    background: tint($blue, 20%);
+    color: white;
+    padding: 10px 0;
+    font-size: $base-size * 1.4;
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    color: lighten($pink, 15%);
+}
+
+section {
+    @include clearfix;
 }

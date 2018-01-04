@@ -29,9 +29,9 @@ const BourbonComponent = () => (
       <section>
         <h3>Forms &amp; Inputs</h3>
         <form>
-          <input type="text" name="name" value="" placeholder="Name"/>
-          <input type="text" name="name" value="" placeholder="Email"/>
-          <input type="button" name="name" value="Click the button"/>
+          <input type="text" name="name" value="" placeholder="Name" />
+	  <input type="text" name="name" value="" placeholder="Email" />
+	  <input type="button" name="name" value="Click the button" />
         </form>
       </section>
     </div>

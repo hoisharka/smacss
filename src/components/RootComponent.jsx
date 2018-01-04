@@ -1,12 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import FirstComponent from './FirstComponent';
-import MixinComponent from './MixinComponent';
+import BourbonComponent from './BourbonComponent';
 
 const RootContainer = () => (
   <div>
-    <FirstComponent/>
-    <MixinComponent/>
+    <BourbonComponent/>
   </div>
 );
 

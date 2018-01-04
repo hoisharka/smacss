@@ -1,10 +1,31 @@
 .box {
-    height: 100px;
-    width: 100px;
-    display: inline-block;
-    @include box( 100%, #555, orangered, yellow );
+    @include size(280px 100px);
+    background: shade($teal, 10%);
+    float: left;
+    color: white;
+    border: solid 1px shade($teal, 20%);
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 $gutter 0 0;
+
+    &:last-child {
+	margin-right: 0;
+    }
+
+    &:hover {
+	@include animation(wow 0.5s $ease-in-out-quint 1);
+    }
 }
 
-.box2 {
-    @include box( 50%, #000, #639, #fc3 );
+@include keyframes(wow) {
+    0% {
+	@include transform(scale(1));
+    }
+    50% {
+	@include transform(scale(2) rotate(-6deg));
+    }
+    100% {
+	@include transform(scale(1));
+    }
 }

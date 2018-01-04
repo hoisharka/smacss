@@ -1,7 +1,18 @@
+header {
+    text-align: center;
+}
+
 .container{
-    width: 768px;
-    margin: 0 auto;
-    padding: 40px;
+    padding: $gutter;
+    width: $content-width;
+    margin: $gutter auto;
     box-sizing: border-box;
-    backgorund: white;
+    background: white;
+    @include cascade($pink);
+}
+
+article {
+    @include columns(3 200px);
+    @include column-rule(solid 1px #ccc);
+    @include column-gap($gutter);
 }
