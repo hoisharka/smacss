@@ -1,0 +1,18 @@
+.basic-info {
+    @include clearfix;
+}
+
+.about {
+    @include grid-column(6);
+    @include grid-shift(1);
+}
+
+.widgets {
+    background: $brand-light;
+    padding: 40px;
+
+    h3 {
+	font-size: 2em;
+	border-bottom:solid 1px $brand-dark;		       
+    }
+}

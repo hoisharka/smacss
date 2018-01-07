@@ -1,9 +1,4 @@
-@mixin box( $radius, $shadowColor, $grad1, $grad2 ){
-    border-radius: $radius;
-    box-shadow: 0 5px 10px $shadowColor;
-    background: #036;
-    background: linear-gradient($grad1, $grad2);
-}
+// GLOBAL MIXINS
 
 @mixin cascade($colour) {
     position: relative;
@@ -16,8 +11,12 @@
 	top: 10px;
 	left: -10px;
 	background: darken($colour, 10%);
-
-	box-shadow: -10px 10px 0 darken($colour, 5%);
+	box-shadow: -10px 10px 0 darken(#colour, 5%);
     }
 }
-
+// media queries
+@mixin retina {
+    @media (min-resolution: 1dppx), (min-resolution: 192dpi) {
+	@content;
+    }
+}

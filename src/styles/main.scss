@@ -1,7 +1,9 @@
 @charset 'UTF-8';
 
 @import
-'0-plugins/bourbon/bourbon';
+'0-plugins/bourbon/bourbon',
+'0-plugins/neat/neat',
+'0-plugins/base/base';
 
 @import
 'variables';
@@ -12,17 +14,22 @@
 // base
 @import
 '1-base/base',
-'1-base/common';
+'1-base/common',
+'1-base/nav',
+'1-base/footer';
 
 // layouts
 @import
 '2-layouts/header',
 '2-layouts/footer',
 '2-layouts/grid',
-'2-layouts/container';
+'2-layouts/container',
+'2-layouts/home';
 
 // modules
 @import
 '3-modules/box',
-'3-modules/forms';
+'3-modules/forms',
+'3-modules/cta',
+'3-modules/widget';
 

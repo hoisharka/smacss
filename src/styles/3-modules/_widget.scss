@@ -1,0 +1,6 @@
+.widget {
+    @include grid-column(4);
+    &:last-child {
+	margin-right: 0;
+    }
+}

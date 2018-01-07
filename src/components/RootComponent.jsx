@@ -1,9 +1,8 @@
 import React from 'react';
-import BourbonComponent from './BourbonComponent';
-
+import PortfolioComponent from './PortfolioComponent';
 const RootContainer = () => (
   <div>
-    <BourbonComponent/>
+    <PortfolioComponent />
   </div>
 );
 

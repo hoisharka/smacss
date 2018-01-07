@@ -1,37 +1,62 @@
 body {
-    font-family: $monospace;
-    font-size: $base-size;
-    background: $pink;
+    font-family: $font-stack-consolas;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $sans-serif-2;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.wrapper {
+    @include grid-container;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    @include clearfix;
+    padding: 40px 40px 0;
 }
 
 .brand {
     @include hide-text;
-    background: center no-repeat;
-    @include retina-image("/images/bourbon-logo", 294px 94px);
-    height: 56px;
-    margin: $gutter auto;
+    // background: center no-repeat;
+    height: 125px;
+    width: 125px;
+    margin: 15px 0;
+    float: left;
+//    background-image: url("/images/brightside-studios-logo_2x.png");
+//    background-size: 125px 125px;
+    @include retina {
+	background-image: url("/images/brightside-studios-logo_2x.png");
+	background-size: 125px 125px;
+    }
 }
 
-h2{
-    font-size: $base-size * 1.8;
-    font-weight: normal;
-    text-align: center;
+a {
+    color: $brand-dark;
+    border-bottom: solid 1px $brand-dark;
+    &:hover {
+	color: $brand-primary;
+    }
+    text-decoration: none;
 }
 
-h3 {
-    @extend h2;
-    background: tint($blue, 20%);
-    color: white;
-    padding: 10px 0;
-    font-size: $base-size * 1.4;
-    text-transform: uppercase;
-}
-
-footer {
-    text-align: center;
-    color: lighten($pink, 15%);
-}
-
-section {
+section, aside, article {
+    margin-top: 40px;
+    margin-bottom: 40px;
     @include clearfix;
+}
+
+#{$all-buttons} {
+    font-family: $sans-serif;
+    background: $brand-primary;
+    &:hover {
+	background: shade($brand-primary, 10%);
+    }
+	  
 }
